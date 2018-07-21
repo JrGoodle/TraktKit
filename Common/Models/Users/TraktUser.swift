@@ -23,6 +23,7 @@ public struct User: Codable {
     public let about: String?
     public let gender: String?
     public let age: Int?
+    public let images: [String: ImageURL]?
     
     // VIP
     public let vipOG: Bool?
@@ -30,6 +31,7 @@ public struct User: Codable {
     
     enum CodingKeys: String, CodingKey {
         case username
+        case images
         case isPrivate = "private"
         case name
         case isVIP = "vip"
@@ -42,4 +44,8 @@ public struct User: Codable {
         case vipOG = "vip_og"
         case vipYears = "vip_years"
     }
+}
+
+public struct ImageURL: Codable {
+    public let full: String?
 }
