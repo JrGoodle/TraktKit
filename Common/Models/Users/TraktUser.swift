@@ -16,6 +16,7 @@ public struct User: Codable {
     public let name: String?
     public let isVIP: Bool?
     public let isVIPEP: Bool?
+    public let ids: ID?
     
     // Full
     public let joinedAt: Date?
@@ -31,6 +32,7 @@ public struct User: Codable {
     
     enum CodingKeys: String, CodingKey {
         case username
+        case ids
         case images
         case isPrivate = "private"
         case name
