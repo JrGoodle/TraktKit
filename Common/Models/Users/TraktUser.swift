@@ -16,7 +16,7 @@ public struct User: Codable {
     public let name: String?
     public let isVIP: Bool?
     public let isVIPEP: Bool?
-    public let ids: ID?
+    public let ids: UserID
     
     // Full
     public let joinedAt: Date?

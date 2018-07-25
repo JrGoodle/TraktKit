@@ -30,6 +30,10 @@ public struct ID: Codable {
     }
 }
 
+public struct UserID: Codable {
+    public let slug: String
+}
+
 public struct SeasonId: Codable {
     public let trakt: Int
     public let tvdb: Int?
